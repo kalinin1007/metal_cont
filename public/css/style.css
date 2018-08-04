@@ -1,0 +1,407 @@
+/*font-family: 'Open Sans', sans-serif;*/
+body {
+    background: #ececec;
+    font-size: 14px;
+    min-width: 320px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.centered {
+    text-align: center;
+  }
+
+  .line1{
+    background-color: blue;
+    width: 40%;
+    height: 3px;
+    margin: 0 auto 10px auto;
+  }
+
+  .main-slogan{
+      color: blue;
+  }
+/*-------------first buttton decoration---------------*/
+.btn-red {
+    background: #d51e08;
+    transition: background 1s;
+    border-radius: 5px;
+}
+
+.btn-red span {
+    color: #fff;
+}
+/*I make it myself*/
+.menu-top .btn-red:hover {
+    background: gray;
+}
+
+.menu-top li:hover {
+    background: yellow;
+}
+
+.glyphicon-shopping-cart {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+/*------- Callback button ----------*/
+
+/* side button */
+
+#call_back{
+    -webkit-transform: rotate(-90deg);  /*Поворот блока с текстом кнопки  на 30 градусов*/
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    position:fixed; /*фиксированная позиция кнопки при прокрутке*/
+    z-index:999;
+    right: 0px; /*отступ с права*/
+    top: 35%; /*отступ сверху*/
+    margin-right:-70px; /*отрицательный отступ справа (чем длиннее название кнопки тем больше должно быть значение данного отступа )*/
+}
+
+
+/*Стили для ссылки*/
+#call_back a{
+    color:#fff; /*цвет ссылки*/
+    display:block;
+    background: blue; /*цвет фона кнопки*/
+    font-size:1.2em; /*размер шрифта*/
+    text-align:center; /*выравнивание по центру*/
+    padding:10px 20px; /*внутренние отступы*/
+    font-weight:bold;/*жирный шрифт*/
+    border-radius:5px; /*радиус скругления углов*/
+    border:1px solid #fff; /*рамка вокруг кнопки*/
+    text-decoration: none;
+}
+
+#call_back a:hover{
+    color: #000;
+    background: #c0d6e4;
+}
+
+/*main-menu*/
+.navbar-inverse{
+    background-color: rgb(52, 52, 114);
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+    font-weight: 700;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+    text-decoration: underline;
+}
+
+.first-li {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.tel-menu{
+    font-size: 20px;
+}
+
+/*==============================header======================================*/
+
+
+/*picture in the carousel like background*/
+
+.btn-top {
+    display: inline-block;
+    background:  red;
+    color:#fff;
+    text-align: center;
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 3px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border:  3px solid red;
+    text-decoration: none;
+    font-size:1.2em;
+  }
+
+
+
+
+.btn-top:hover {
+    background: lightcoral;
+    text-decoration: none;
+}
+
+
+.header-pic{
+  background-image: url(../img/met_container_2.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 500px;
+  width: 100%;
+   margin-top: 50px; 
+}
+
+.header-pic-wrap{
+    background: #000;
+    opacity: 0.8; 
+    /* color: rgb(255, 123, 0);  */
+}
+
+.header-inner {
+    margin-top: 150px;
+     
+    color: white;
+  }
+  
+  .header-inner h1{
+    font-weight: 700;
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+    /* z-index: 999; */
+  }
+  
+
+/*  main-slogan  */
+
+.main-slogan {
+    text-align: center;
+    background: #fff;
+    border-top: 1px solid #cdcdcd;
+    border-bottom: 3px solid #cdcdcd;
+    padding-bottom: 10px;
+}
+
+.main-slogan h1{
+    font-size: 30px;
+}
+
+/*===================sidebar carousel + banner============================*/
+
+/*carousel*/
+
+.car-side-wrap {
+    background:#fff;;
+    text-align: center;
+}
+
+.car-side-wrap h3{
+    margin-top: 10px;
+}
+
+.car-side-wrap .carousel-indicators {
+    background: rgba(128, 128, 128, 0.5);
+}
+
+.car-side-wrap .carousel-inner>.item>a>img, .carousel-inner>.item>img {
+    width: 100%;
+    min-height: 400px;
+}
+
+
+/*=============content===================*/
+
+.service img{
+    margin-top: 10px;
+}
+
+.service {
+    border: 2px solid red;
+    padding: 7px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.service a {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+
+.row-why{
+    background-color: #fff;
+}
+
+.row-why img{
+    height: 130px;
+}
+
+.row-why h4{
+    font-weight: 700;
+}
+
+
+
+.price {
+    font-size: 22px;
+    font-weight: 700;
+    color: red;
+    text-align: center;
+    margin: 
+}
+
+/*.thumbnail .caption */
+
+.butts {
+    text-align: center;
+}
+
+.contact {
+    margin-bottom: 10px;
+}
+
+/*====================brands-area==================*/
+
+.brands-area {
+    background: #fff;
+    text-align: center;
+    box-shadow: 0 0 3px black;
+}
+
+.brands-wrap {
+    margin: 10px 0;
+}
+
+.brands-wrap img {
+    margin: 20px 30px;
+    max-height: 100px;
+}
+
+/*====================== steps ==========================*/
+
+.steps img{
+    height: 100px;
+}
+
+/*================== contact ============================*/
+
+.contact{
+    box-shadow: 0 0 3px black;
+    background-color: #fff;
+}
+
+/*====================black-bottom==================*/
+
+.black-bottom {
+    background: #000;
+    color: darkgray;
+}
+
+.black-bottom h4{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.black-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 30px;
+}
+
+.black-bottom img{
+    max-width: 40px;
+    cursor: pointer;
+}
+
+.black-bottom a{
+    color: darkgray;
+}
+
+/*===================footer==================*/
+
+.rights {
+    margin: 20px 0;
+}
+
+
+/*======== media ===========================*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    .menu-top .navbar-nav{
+        float: none !important;
+    }
+
+    .main-menu .nav.navbar-nav.navbar-right {
+       display: block;
+   }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+    .search {
+        position: relative;
+        display: inline-block;
+        margin-left: 60px;
+    }
+
+   .main-menu .nav.navbar-nav.navbar-right {
+       display: none;
+   }
+
+   .sidebar {
+       border: none;
+       padding: 0;
+   }
+              
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+    .menu-carousel .carousel-inner .carousel-caption {
+        left: 0;
+    }
+
+    .main-menu .navbar-inverse .navbar-nav>li>a {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .main-menu .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .main-menu .navbar-brand img {
+        max-width: 60px;
+    }
+
+    .main-menu .nav.navbar-nav.navbar-right {
+       display: block !important;
+   }
+
+   .search {
+       display: none;
+   }
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+     .menu-carousel .carousel-inner .carousel-caption {
+        left: 0;
+    }
+
+}
+
+@media only screen and (min-width : 992px) {
+    .main-menu .nav.navbar-nav.navbar-right{
+        display: block !important;
+    }
+}
