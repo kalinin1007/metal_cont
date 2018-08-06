@@ -29,7 +29,7 @@
   <body>
     <header>
         <div id="call_back">
-          <a href="">Обратный звонок</a>
+          <a href="javascript:void(0)">Обратный звонок</a>
         </div>
         <nav class="navbar navbar-inverse navbar-fixed-top"> 
             <div class="container">
@@ -41,7 +41,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">К<i class="glyphicon glyphicon-upload"></i>нтейнер</a>
+                    <a class="navbar-brand" href="">К<i class="glyphicon glyphicon-upload"></i>нтейнер</a>
                 </div>
     
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -329,11 +329,13 @@
                 </div>
                 <div class="col-sm-7">
                     <h2>Заказать расчет цены</h2>
-                    <form action="form.php" id="form" method="POST">
+                    <form action="javascript:void(0)" id="form" method="POST" onsubmit="return ajaxForm();">
                         <p>Имя</p>
                         <input type="text" name="name" class="form-control" >
                         <p>Email</p>
                         <input type="text" name="mail" class="form-control" >
+                        <p>Характеристики контейнера</p>
+                        <input type="text" name="char" class="form-control" >
                         <input class="input-btn" type="submit" value="Заказать расчет">
                     </form>
                 </div>
@@ -358,11 +360,11 @@
         <div class="col-sm-6">
             
             <ul class='black-list'>
-            <li><a href="#">sdgsgs</a></li>
-            <li><a href="#">sdgsgs</a></li>
-            <li><a href="#">sdgsgs</a></li>
-            <li><a href="#">sdgsgs</a></li>
-            <li><a href="#">sdgsgs</a></li>
+            <li><a href="#">sdgsgs sdgsgs sdgsgs</a></li>
+            <li><a href="#">sdgsgs sdgsgs sdgsgs</a></li>
+            <li><a href="#">sdgsgs sdgsgs sdgsgs</a></li>
+            <li><a href="#">sdgsgs sdgsgs sdgsgs</a></li>
+            <li><a href="#">sdgsgs sdgsgs sdgsgs</a></li>
             </ul>
         </div>
     </div>
@@ -386,6 +388,24 @@
     </div>
   </div>
 </footer>
+
+<!-- modal -->
+        <div id="wrapper">
+            <div class="cover"></div>
+            <div class="modal">
+                <div class="mod-content">
+                <p>Заказать звонок</p>
+                <form onsubmit="return ajaxCall();">
+                    <input type="text" placeholder="Имя">
+                    <input type="text" placeholder="Телефон">
+                    <input type="submit" value="Заказать звонок">
+                </form>
+                </div>
+            </div>
+        <!-- <div class="cnt">
+            <button class="open-modal-btn">OPEN MODAL</button>
+        </div> -->
+        </div>  
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
